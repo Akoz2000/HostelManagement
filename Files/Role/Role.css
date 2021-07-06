@@ -1,0 +1,91 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+body
+{
+	background-image: url("bg.jpg");
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 font-family: 'Montserrat', sans-serif;
+}
+
+button
+{
+	background-color: #191919;
+	border: 2px solid #191919;
+	border-radius: 5px;
+	width: 227px;
+	height: 180px;
+	margin:3px;
+	position: relative;
+	top: 300px; 
+	left: 500px;
+	bottom: 300px;
+	color: white;
+
+
+
+
+}
+button:hover
+{
+	color: white;
+	background-color: #191919;
+	cursor: pointer;
+	border: 0.5px solid grey;
+}
+img
+{
+	width: 100px;
+	height: 100px;
+	
+	
+}
+.Roles
+{
+	padding-top: 10px;
+	padding-left: 4px;
+	width: 220px;
+	size: 100px;
+	font-size: 20px;
+}
+#center
+{
+	position: absolute;
+	top: 220px;
+	left: 680px;
+	color: white;
+
+}
+
+div
+{
+	position: absolute;
+	height: 20px;
+	width: 230px;
+
+	
+	top: 520px;
+	left: 680px;
+
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+
+}
+h2
+{
+	display: inline;
+}
+img#Login
+{
+	width: 20px;
+	height: 20px;
+	padding: 2px;
+	position: relative;
+	top: 2px;
+
+}
+

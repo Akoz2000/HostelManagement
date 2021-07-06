@@ -1,0 +1,4 @@
+"host": "localhost",
+"user": "root",
+"password": "101010",
+"database": "db_backup"

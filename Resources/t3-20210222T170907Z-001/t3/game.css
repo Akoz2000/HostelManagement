@@ -1,0 +1,52 @@
+body{
+    background-color:#a8e6ff;
+}
+
+
+
+table{
+  background-color:#d9f1ff;
+    padding-bottom: 100px;
+}
+
+.container-fluid
+{
+  margin-top: 0px;
+  padding-top: 0px;
+  background-color:#1c4966;
+  display: inline-block;
+  margin: 0px;
+  padding-bottom: 0px;
+  padding-top: 25px;
+display: inline-block;
+}
+
+
+td{
+  height: 100px;
+  width: 100px;
+  border: 4px solid black;
+  text-align: center;
+  font-size: 60px;
+
+
+
+}
+
+.navbar-header
+{
+color: #ffff;
+}
+
+.jumbotron
+{
+  margin: 0px;
+
+
+}
+
+
+.last
+{
+  padding:8px;
+}

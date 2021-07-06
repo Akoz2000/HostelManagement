@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Registration Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/stylesheets/compstyle.css" type="text/css">
+</head>
+<body>
+    <div><a href="/dashboard"><button class="button"><span> Dashboard </span></button></div></a>
+  <form action="/complaint/create" method="POST" class="form">
+<!--====form section start====-->
+ <div class="container">
+        <div class="form1">
+            <div class="heading">
+                <img src="/images/logo.png" class="logo">
+                <h1>Complaint Form</h1>
+            </div>
+            <!--Form-->
+            <div class="wrap2">
+                <div class="f1">
+                    <label> Name</label>
+                    <input type="text" name="name" id="name"/>
+                    <span class="focus-input"></span>
+                </div>
+            </div>
+            
+            <div class="wrap2">
+                <label>StudenT ID</label>
+                <input type="text" name="student_id">
+                <span class="focus-input2"></span>
+            </div>
+            <div class="wrap3">
+              <label>Complaint</label>
+              <textarea rows="6" name="complaint_info" id="complaint_info" placeholder="" required="" class="complaint"></textarea>
+    
+              <span class="focus-input2"></span>
+          </div>
+
+            <button class="btn" id="btn">Submit</button>
+            
+            <div class="text">
+                Complain Submitted
+            </div>
+
+        </div>
+        <!--Image-->
+        <div class="image">
+            <img src="/images/img.jpg" class="img" alt=""/>
+        </div>
+    </div>
+</body>
+
+<script>
+    const btn = document.getElementById("btn");
+    const alert = document.querySelector(".text");
+    btn.addEventListener("click", btnClicked);
+    function btnClicked(){
+        alert.style.display = "inline-block";
+        setTimeout(
+            () => alert.remove(), 50000
+        )
+    }
+</script>
+
+</html>

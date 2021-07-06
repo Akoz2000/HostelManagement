@@ -1,0 +1,19 @@
+html 
+ head 
+   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+
+   body 
+   div(class="container")
+   <center> <div class='well'><b> User Details </b> </div></center>
+
+table(class='table table-striped')
+ thead 
+     tr 
+       th ID 
+       th Password 
+    
+    for each item in items 
+       tr 
+         td=item.id
+         td=item.pass 
+ 

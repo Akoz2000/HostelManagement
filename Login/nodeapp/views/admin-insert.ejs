@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/stylesheets/admininsert.css" type="text/css">
+</head>
+<body>
+<!--====form section start====-->
+<div><a href="/dashboardadmin"><button class="button"><span> Dashboard </span></button></div></a>
+<div><a href="/new/form"><button class="button1"><span>Add New Student</span></button></div></a>
+
+<div class="wrapper">
+  
+    <h2 class="title">Allocation</h2>
+    <form action="/admin-insert/create" method="POST" class="form">
+
+      <div class="field">
+          <input type="text"  name="full_name" class="field" required>
+          <label>Full Name</label>
+        </div>
+
+      <div class="field">
+          <input type="text"  name="student_id" class="field" required>
+          <label>ID</label>
+        </div>  
+
+      <div class="field">
+         <input   name="room_no" class="field" required>
+          <label>Room Number</label>
+        </div>   
+
+      <div class="field">
+         <input type="text"  name="hostel_id" class="field" required>
+         <label>Hostel</label>
+        </div>     
+      
+
+          <div class="field">
+          <input type="submit" value="Enter">
+        </div>
+        </div>
+</div>
+
+<!--====form section start====-->
+</body>
+</html>

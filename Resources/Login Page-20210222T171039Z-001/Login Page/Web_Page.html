@@ -1,0 +1,65 @@
+<?php 
+require 'dbconfig/config.php'
+ ?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Input Form UI Design</title>
+	<link rel="stylesheet"  href="new.css">
+</head>
+
+<body>
+<div class="box">
+	<h2>LOGIN</h2>
+	<form class="myform" action="index.php" method="post">
+		<div class="inputBox">
+	          <input type="text" name="username" required="">
+	          <label>Username</label>
+	      </div>
+
+<div class="inputBox">
+	          <input type="password" name="password" required="">
+	          <label>Password</label>
+	      </div>
+
+ <input type="submit" name="login" required="">	  
+
+
+	 </form>
+
+	 <?php
+
+
+if(isset($_POST['login']))
+{
+
+	echo '<script type="text/javascript">  alert("login button clicked")  </script>';
+$username=$_POST['username'];
+$password=$_POST['password'];
+
+$query="select * from user WHERE username='$username' AND password='$password'";
+
+
+$query_run = mysqli_query($con,$query);
+if(mysqli_num_rows($query_run)>0)
+{
+	//valid
+	$_SESSION['username']=$username;
+	header('location:hompage.php');
+
+}
+else
+ {
+ //invalid
+ 	echo '<script type="text/javascript">  alert("Invalid Credentials")  </script>';
+ } 
+}
+
+
+	   ?>
+   </div>
+ </body>
+</html>

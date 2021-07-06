@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Email Report</title>
+<link rel="stylesheet" href="/stylesheets/mail.css" type="text/css">
+</head>
+<body>
+<!--====form section start====-->
+
+    <h2>Email Report</h2>
+    
+    <div class="div1">
+    <form action="/send-email" method="POST">
+          <label class="l">To</label>
+          <input type="text" placeholder="Receiver Email" name="to" required >
+          
+          <label>Subject</label>
+          <input type="text" placeholder="Subject" name="subject" required >
+    
+          <label>Message</label>
+          <textarea placeholder="Enter Full Country" name="message" required >
+            </textarea>
+          <button type="submit">Send</button>
+      </form> 
+    </div>
+<!--====form section start====-->
+</body>
+</html>

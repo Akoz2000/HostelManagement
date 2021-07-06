@@ -1,0 +1,20 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "login.js",
+  "scripts": {
+    "start": "node login.js",
+    "dev": "nodemon login.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4",
+    "mysql": "*"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
